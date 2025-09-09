@@ -1,0 +1,160 @@
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f9;
+  color: #333;
+}
+
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  width: 420px;      
+  height: auto;
+  
+ 
+}
+
+.header-content {
+  text-align: left;
+}
+
+.header-content h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+  color: #858480;
+}
+
+.header-content p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+
+nav {
+  background-color: #444;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0.8rem 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #f0eeea;
+}
+
+
+.submenu-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.submenu-content a {
+  display: block;
+  padding: 0.6rem;
+  color: #fff;
+}
+
+.submenu-content a:hover {
+  background: #555;
+}
+
+.submenu:hover .submenu-content {
+  display: block;
+}
+
+
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.department {
+  margin-bottom: 2rem;
+}
+
+.department h2 {
+  margin-bottom: 1rem;
+  color: #444;
+  border-bottom: 2px solid #72716c;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1.2rem;
+  background-color: #333;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.social-links a {
+  color: #8b8b89;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-content {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li {
+    margin: 0.5rem 0;
+  }
+}
